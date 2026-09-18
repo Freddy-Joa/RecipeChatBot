@@ -1,0 +1,198 @@
+/* Page Background */
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+url("C:\\Users\\louro\\Downloads\\Download premium image of Backgrounds plant green paper_ by Rob about vine frame, ivy vintage, ephemera, old paper texture, and background 14479902.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+margin:0;
+padding:0;
+color:#fff;
+}
+
+/* Main Container */
+
+.container{
+width:85%;
+max-width:1200px;
+margin:auto;
+text-align:center;
+padding:40px;
+
+background: rgba(255,255,255,0.85);
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Title */
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+color:#2f4f2f;
+}
+
+/* Subtitle */
+
+.subtitle{
+font-size:18px;
+margin-bottom:30px;
+color:#444;
+}
+
+/* Search Form */
+
+.search-box{
+margin-bottom:35px;
+}
+
+/* Input Field */
+
+input{
+width:60%;
+padding:14px;
+
+border:none;
+border-radius:10px;
+
+font-size:16px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+outline:none;
+
+transition:0.3s;
+}
+
+input:focus{
+transform:scale(1.02);
+}
+
+/* Button */
+
+button{
+
+padding:14px 22px;
+
+border:none;
+border-radius:10px;
+
+background:#2e7d32;
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+margin-left:10px;
+
+transition:0.3s;
+}
+
+button:hover{
+
+background:#1b5e20;
+
+transform:scale(1.05);
+}
+
+/* Results Grid */
+
+.results{
+
+margin-top:30px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+}
+
+/* Recipe Card */
+
+.recipe-card{
+
+background:white;
+
+padding:22px;
+
+border-radius:14px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+text-align:left;
+
+transition:0.3s;
+}
+
+/* Hover effect */
+
+.recipe-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Recipe Title */
+
+.recipe-card h2{
+
+color:#2e7d32;
+
+margin-top:0;
+}
+
+/* Section Title */
+
+.section{
+
+margin-top:12px;
+}
+
+.section h4{
+
+margin-bottom:6px;
+
+color:#333;
+}
+
+/* Text */
+
+.section p{
+
+color:#555;
+
+line-height:1.6;
+
+font-size:15px;
+}
+
+/* Responsive for mobile */
+
+@media (max-width:768px){
+
+input{
+width:90%;
+margin-bottom:10px;
+}
+
+button{
+margin-left:0;
+}
+
+.container{
+width:95%;
+padding:25px;
+}
+
+}

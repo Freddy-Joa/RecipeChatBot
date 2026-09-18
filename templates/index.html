@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cook Along Bot</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🍳 Cook Along Bot</h1>
+
+<p class="subtitle">Tell me what ingredients you have and I'll suggest recipes!</p>
+
+<form method="POST" class="search-box">
+
+<input type="text"
+name="ingredients"
+placeholder="Example: egg, milk, butter"
+required>
+
+<button type="submit">Find Recipes</button>
+
+</form>
+
+<div class="results">
+
+{% for r in recipes %}
+
+<div class="recipe-card">
+
+<h2>{{r.name}}</h2>
+
+<div class="section">
+<h4>🧾 Ingredients</h4>
+<p>{{r.ingredients}}</p>
+</div>
+
+<div class="section">
+<h4>👨‍🍳 Steps</h4>
+<p>{{r.steps}}</p>
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</body>
+</html>
